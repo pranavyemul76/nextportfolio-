@@ -1,6 +1,15 @@
 "use client";
 import Link from "next/link";
 const Herosection = () => {
+  const onButtonClick = () => {
+    const pdfUrl = "/Resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <section id="Home">
@@ -26,7 +35,7 @@ const Herosection = () => {
 
                 <div className="justify-left mb-4 flex items-center gap-x-6 pb-10 sm:pb-1">
                   <button
-                    href="#"
+                    onClick={onButtonClick}
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Resume Download
