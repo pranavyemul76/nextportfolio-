@@ -136,52 +136,52 @@ const Herosection = () => {
         <div className="my-7 grid grid-cols-2 grid-rows-3 gap-8 rounded-2xl bg-[#2e4ce22b] p-6 sm:grid-cols-6  sm:grid-rows-1">
           <div className="flex flex-col items-center justify-center">
             <img src="js.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">Javascript</p>
+            <p className="mt-3 font-bold  text-indigo-700">Javascript</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="nodejs.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">NodeJs</p>
+            <p className="mt-3 font-bold  text-indigo-700">NodeJs</p>
           </div>
           <div className="flex  flex-col items-center justify-center">
             <img src="images.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">React</p>
+            <p className="mt-3 font-bold  text-indigo-700">React</p>
           </div>
           <div className="flex  flex-col items-center justify-center">
             <img src="html.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">Html5</p>
+            <p className="mt-3 font-bold  text-indigo-700">Html5</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="css.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">css</p>
+            <p className="mt-3 font-bold  text-indigo-700">css</p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
             <img src="web.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">AWS</p>
+            <p className="mt-3 font-bold  text-indigo-700">AWS</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="GitHub.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">GitHub</p>
+            <p className="mt-3 font-bold  text-indigo-700">GitHub</p>
           </div>
           <div className="flex  flex-col items-center justify-center">
             <img src="mongodb.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">MongoDB</p>
+            <p className="mt-3 font-bold  text-indigo-700">MongoDB</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="postgre.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">Postgre</p>
+            <p className="mt-3 font-bold  text-indigo-700">Postgre</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="tailwind.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">Tailwind</p>
+            <p className="mt-3 font-bold  text-indigo-700">Tailwind</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="Redux.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">Redux</p>
+            <p className="mt-3 font-bold  text-indigo-700">Redux</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <img src="material.jpg" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-orange-500">Material</p>
+            <p className="mt-3 font-bold  text-indigo-700">Material</p>
           </div>
         </div>
       </section>
@@ -194,31 +194,46 @@ const Herosection = () => {
         <div class="container mx-auto mt-6 h-full w-full bg-gray-200">
           <div class="wrap relative h-full overflow-hidden p-10">
             <div class="border-2-2  absolute  left-0 h-full border border-gray-700 border-opacity-20 sm:left-1/2"></div>
-
-            <div class="right-timeline mb-8 w-full items-center justify-between sm:flex">
+            <div class="left-timeline mb-8 w-full flex-row-reverse items-center justify-between sm:flex">
               <div class="order-1 sm:w-5/12"></div>
               <div class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
-                <h1 class="mx-auto text-lg font-semibold text-white">1</h1>
+                <h1 class="mx-auto text-lg font-semibold text-white">4</h1>
               </div>
-              <div class="order-1 rounded-lg bg-gray-400 px-6 py-4 shadow-xl sm:w-5/12">
-                <h3 class="mb-3 text-xl font-bold text-gray-800">
-                  Bachelor of Computer Application
+              <div class="order-1 rounded-lg bg-indigo-700 px-6 py-4 shadow-xl sm:w-5/12">
+                <h3 class="mb-3 text-xl font-bold text-white">
+                  PowerSchool | bangalore
                 </h3>
-                <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                  Bharati Vidyapeeth University, Pune
+                <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+                  Associate software engineer
                 </p>
-                <p class="mt-4 text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                  2019-2022
+                <p class="mt-3 text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+                  Nov 2024 - Feb 2025
                 </p>
               </div>
             </div>
-
+            <div class="right-timeline mb-8 w-full items-center justify-between sm:flex">
+              <div class="order-1 sm:w-5/12"></div>
+              <div class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-indigo-950 shadow-xl">
+                <h1 class="mx-auto text-lg font-semibold text-white">3</h1>
+              </div>
+              <div class="order-1 rounded-lg bg-indigo-950 px-6 py-4 shadow-xl sm:w-5/12">
+                <h3 class="mb-3 text-xl font-bold text-white">
+                  LegitBytes | Remote
+                </h3>
+                <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+                  Full stack Developer
+                </p>
+                <p class="mt-3 text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+                  Jan 2023 - Jun 2024
+                </p>
+              </div>
+            </div>
             <div class="left-timeline mb-8 w-full flex-row-reverse items-center justify-between sm:flex">
               <div class="order-1 sm:w-5/12"></div>
               <div class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
                 <h1 class="mx-auto text-lg font-semibold text-white">2</h1>
               </div>
-              <div class="order-1 rounded-lg bg-red-400 px-6 py-4 shadow-xl sm:w-5/12">
+              <div class="order-1 rounded-lg bg-indigo-700 px-6 py-4 shadow-xl sm:w-5/12">
                 <h3 class="mb-3 text-xl font-bold text-white">
                   Data Stack Technologies | Remote
                 </h3>
@@ -230,21 +245,20 @@ const Herosection = () => {
                 </p>
               </div>
             </div>
-
             <div class="right-timeline mb-8 w-full items-center justify-between sm:flex">
               <div class="order-1 sm:w-5/12"></div>
               <div class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
-                <h1 class="mx-auto text-lg font-semibold text-white">3</h1>
+                <h1 class="mx-auto text-lg font-semibold text-white">1</h1>
               </div>
-              <div class="order-1 rounded-lg bg-gray-400 px-6 py-4 shadow-xl sm:w-5/12">
-                <h3 class="mb-3 text-xl font-bold text-gray-800">
-                  LegitBytes | Remote
+              <div class="order-1 rounded-lg bg-gray-800 px-6 py-4 shadow-xl sm:w-5/12">
+                <h3 class="mb-3 text-xl font-bold text-white">
+                  Bachelor of Computer Application
                 </h3>
-                <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
-                  Full stack Developer
+                <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">
+                  Bharati Vidyapeeth University, Pune
                 </p>
-                <p class="mt-3 text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
-                  Jan 2023 - Jun 2024
+                <p class="mt-4 text-sm leading-snug tracking-wide text-white text-opacity-100">
+                  2019-2022
                 </p>
               </div>
             </div>

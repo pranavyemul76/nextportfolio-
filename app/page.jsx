@@ -1,8 +1,5 @@
-import { DarkThemeToggle } from "flowbite-react";
 import { NavbarComponent } from "../components/Navbars";
 import Herosection from "../components/Herosection";
-//import Herosection from "../components/Herosection";
-
 export default function Home() {
   return (
     <>
