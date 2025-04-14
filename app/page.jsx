@@ -1,5 +1,5 @@
 import { NavbarComponent } from "../components/Navbars";
-import Herosection from "../components/Herosection";
+import HomePage from "../components/HomePage";
 export default function Home() {
   return (
     <>
@@ -7,7 +7,7 @@ export default function Home() {
         <NavbarComponent></NavbarComponent>
       </header>
       <main className="relative top-10">
-        <Herosection></Herosection>
+        <HomePage />
       </main>
       <footer></footer>
     </>
