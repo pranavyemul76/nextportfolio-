@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import Skills from "./Skills";
+import LinkButton from "./linkbutton";
 const Herosection = () => {
   const onButtonClick = () => {
     const pdfUrl = "/Resume.pdf";
@@ -36,28 +38,41 @@ const Herosection = () => {
                 <div className="justify-left mb-4 flex items-center gap-x-6 pb-10 sm:pb-1">
                   <button
                     onClick={onButtonClick}
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    class="group/download relative flex cursor-pointer gap-1 rounded-3xl bg-[#5c5fe9] px-8 py-4 font-semibold text-[#f1f1f1] shadow-xl transition-all duration-300 hover:bg-opacity-70 active:shadow-inner"
                   >
-                    Resume Download
+                    Download Resume
+                    <div class="absolute bottom-full left-2/4 mb-3 origin-bottom scale-0 rounded-md bg-[#5c5fe9] px-2 py-2 text-xs uppercase shadow-lg transition-all duration-300 before:absolute before:left-2/4 before:top-full before:h-3 before:w-3 before:-translate-x-2/4 before:-translate-y-2/4 before:rotate-45 before:border-solid before:bg-[#5c5fe9] before:content-[''] group-hover/download:scale-100">
+                      84kb
+                    </div>
                   </button>
+
                   <div className="flex justify-start gap-1">
                     <Link
                       href="https://github.com/pranavyemul76"
                       target="_blank"
                     >
-                      <img src="githubicon.png" className="mx-3 w-12" />
+                      <img
+                        src="githubicon.png"
+                        className="mx-3 w-12 hover:scale-75"
+                      />
                     </Link>
                     <Link
                       href="https://www.linkedin.com/in/pranav-yemul-023bb6178/"
                       target="_blank"
                     >
-                      <img src="linkedin.svg" className="mx-3 w-12" />
+                      <img
+                        src="linkedin.svg"
+                        className="mx-3 w-12 hover:scale-75"
+                      />
                     </Link>
                     <Link
                       href="https://www.instagram.com/journeyjoystories/"
                       target="_blank"
                     >
-                      <img src="instagram.svg" className="mx-3 w-12" />
+                      <img
+                        src="instagram.svg"
+                        className="mx-3 w-12 hover:scale-75"
+                      />
                     </Link>
                   </div>
                 </div>
@@ -74,124 +89,63 @@ const Herosection = () => {
         What I Do!
       </h2>
       <hr></hr>
-      <div className="m-auto mt-6  grid grid-cols-1 grid-rows-4 gap-8 sm:grid-cols-4  sm:grid-rows-1 sm:px-7">
-        <div>
-          <div className="max-w-sm rounded-lg  border border-gray-200 bg-[#0b65741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
-            <Link href="#">
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Front-End Development
-              </h5>
-            </Link>
-            <p className="mb-3 font-normal">
-              creating the visual and interactive elements of a website using
+      <div className="m-auto mt-6 grid grid-cols-1 gap-8 sm:grid-cols-4 sm:px-7">
+        <div className="flex">
+          <div className="flex w-full flex-col justify-between rounded-lg border border-gray-200 bg-[#0b65741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
+            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Front-End Development
+            </h5>
+            <p className="font-normal text-gray-700 dark:text-gray-300">
+              Creating the visual and interactive elements of a website using
               HTML, CSS, and JavaScript to ensure a user-friendly experience.
             </p>
           </div>
         </div>
-        <div>
-          <div className="max-w-sm rounded-lg border border-gray-200 bg-[#6b0b741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
-            <Link href="#">
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Optimization
-              </h5>
-            </Link>
-            <p className="mb-3 font-normal">
-              Code Executing efficiency, thereby speeding up response times and
-              improving the overall performance of the web application
-            </p>
-          </div>
-        </div>
-        <div>
-          <div className="max-w-sm rounded-lg border border-gray-200 bg-[#6b0b741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
-            <Link href="#">
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Back-End Development
-              </h5>
-            </Link>
-            <p className="mb-3 font-normal">
-              Building and maintaining the server-side logic, databases, and
-              APIs functionality and data processing of a web application
-            </p>
-          </div>
-        </div>
-        <div>
-          <div className="max-w-sm rounded-lg border border-gray-200 bg-[#0b65741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
-            <Link href="#">
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Translate Designs
-              </h5>
-            </Link>
-            <p className="mb-3 font-normal">
-              Convert design concepts into code using the CSS
-            </p>
-          </div>
-        </div>
-      </div>{" "}
-      {/* Skills */}
-      <section id="Skills">
-        <h2 className="mb-1 ml-3 mt-12 text-4xl font-extrabold dark:text-white sm:mb-7 sm:ml-8">
-          Skills
-        </h2>
-        <hr></hr>
-        <div className="my-7 grid grid-cols-2 grid-rows-3 gap-8 rounded-2xl bg-[#2e4ce22b] p-6 sm:grid-cols-6  sm:grid-rows-1">
-          <div className="flex flex-col items-center justify-center">
-            <img src="js.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">Javascript</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="nodejs.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">NodeJs</p>
-          </div>
-          <div className="flex  flex-col items-center justify-center">
-            <img src="images.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">React</p>
-          </div>
-          <div className="flex  flex-col items-center justify-center">
-            <img src="html.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">Html5</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="css.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">css</p>
-          </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <img src="web.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">AWS</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="GitHub.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">GitHub</p>
-          </div>
-          <div className="flex  flex-col items-center justify-center">
-            <img src="mongodb.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">MongoDB</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="postgre.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">Postgre</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="tailwind.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">Tailwind</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="Redux.png" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">Redux</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="material.jpg" className="w-3/4  rounded-2xl border" />
-            <p className="mt-3 font-bold  text-indigo-700">Material</p>
+        <div className="flex">
+          <div className="flex w-full flex-col justify-between rounded-lg border border-gray-200 bg-[#6b0b741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
+            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Optimization
+            </h5>
+            <p className="font-normal text-gray-700 dark:text-gray-300">
+              Code Executing efficiency, thereby speeding up response times and
+              improving the overall performance of the web application.
+            </p>
           </div>
         </div>
-      </section>
+
+        <div className="flex">
+          <div className="flex w-full flex-col  rounded-lg border border-gray-200 bg-[#6b0b741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
+            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Back-End Development
+            </h5>
+            <p className="font-normal text-gray-700 dark:text-gray-300">
+              Building and maintaining the server-side logic, databases, and
+              APIs functionality and data processing of a web application.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex">
+          <div className="flex w-full flex-col  rounded-lg border border-gray-200 bg-[#0b65741f] p-6 shadow dark:border-gray-700 dark:bg-gray-800">
+            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Translate Designs
+            </h5>
+            <p className="font-normal text-gray-700 dark:text-gray-300">
+              Convert design concepts into code using CSS.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Skills */}
+      <Skills />
       {/* experience */}
       <section id="Experience">
-        <h2 className="mb-6  ml-1 mt-6 text-4xl font-extrabold dark:text-white sm:ml-8">
+        <h2 className="mb-6  ml-1 mt-10 text-4xl font-extrabold dark:text-white sm:ml-8">
           Education & Experience
         </h2>
         <hr></hr>
-        <div class="container mx-auto mt-6 h-full w-full bg-gray-200">
+        <div class="  mt-6 h-full w-full border border-violet-500 ">
           <div class="wrap relative h-full overflow-hidden p-10">
             <div class="border-2-2  absolute  left-0 h-full border border-gray-700 border-opacity-20 sm:left-1/2"></div>
             <div class="left-timeline mb-8 w-full flex-row-reverse items-center justify-between sm:flex">
@@ -201,7 +155,7 @@ const Herosection = () => {
               </div>
               <div class="order-1 rounded-lg bg-indigo-700 px-6 py-4 shadow-xl sm:w-5/12">
                 <h3 class="mb-3 text-xl font-bold text-white">
-                  PowerSchool | bangalore
+                  PowerSchool | Bangalore
                 </h3>
                 <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                   Associate software engineer
@@ -305,27 +259,7 @@ const Herosection = () => {
                 href="https://deployments-eta.vercel.app/"
                 target="_blank"
               >
-                <button
-                  class="flex select-none items-center gap-2 rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                >
-                  Live Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    class="h-4 w-4"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    ></path>
-                  </svg>
-                </button>
+                <LinkButton></LinkButton>
               </Link>
             </div>
           </div>
@@ -359,27 +293,7 @@ const Herosection = () => {
                 href="https://documentupload.vercel.app/"
                 target="_blank"
               >
-                <button
-                  class="flex select-none items-center gap-2 rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                >
-                  Live Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    class="h-4 w-4"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    ></path>
-                  </svg>
-                </button>
+                <LinkButton></LinkButton>
               </Link>
             </div>
           </div>
@@ -412,32 +326,35 @@ const Herosection = () => {
                 href="https://events-eight-smoky.vercel.app/"
                 target="_blank"
               >
-                <button
-                  class="flex select-none items-center gap-2 rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                >
-                  Live Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    class="h-4 w-4"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    ></path>
-                  </svg>
-                </button>
+                <LinkButton></LinkButton>
               </Link>
             </div>
           </div>
         </div>
       </section>
+
+      <div class="card flex justify-center">
+        <div class="group relative flex aspect-video w-[300px] items-center justify-center bg-indigo-700 transition-all duration-700 sm:w-[350px]">
+          <div class="absolute flex h-full w-full flex-col items-center justify-start bg-white py-5 transition-all duration-300 group-hover:-translate-y-16 group-hover:duration-1000">
+            <p class="font-serif text-xl font-semibold text-gray-500 sm:text-2xl">
+              Thank You
+            </p>
+            <p class="px-10 text-center text-[10px] text-gray-700 sm:text-[12px]">
+              Looking forward to connecting and building something amazing
+              together!
+            </p>
+
+            <p class="pt-5 font-sans text-[10px] text-gray-700">Pranav </p>
+          </div>
+          <button class="seal z-40 flex aspect-square w-10 items-center justify-center rounded-full border-4 border-rose-900 bg-white text-[10px] font-semibold text-red-800 transition-all duration-1000 [clip-path:polygon(50%_0%,_80%_10%,_100%_35%,_100%_70%,_80%_90%,_50%_100%,_20%_90%,_0%_70%,_0%_35%,_20%_10%)] group-hover:rotate-180 group-hover:scale-0 group-hover:opacity-0">
+            Open
+          </button>
+          <div class="tp absolute h-full w-full bg-indigo-800 transition-all duration-1000 [clip-path:polygon(50%_50%,_100%_0,_0_0)] group-hover:duration-100 group-hover:[clip-path:polygon(50%_0%,_100%_0,_0_0)]"></div>
+          <div class="lft absolute h-full w-full bg-indigo-800 transition-all duration-700 [clip-path:polygon(50%_50%,_0_0,_0_100%)]"></div>
+          <div class="rgt absolute h-full w-full bg-indigo-800 transition-all duration-700 [clip-path:polygon(50%_50%,_100%_0,_100%_100%)]"></div>
+          <div class="btm absolute h-full w-full bg-indigo-800 transition-all duration-700 [clip-path:polygon(50%_50%,_100%_100%,_0_100%)]"></div>
+        </div>
+      </div>
       <section id="contactus">
         <div class="container mx-auto flex flex-col bg-white">
           <div class="draggable w-full">
