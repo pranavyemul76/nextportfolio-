@@ -269,15 +269,18 @@ const Herosection = () => {
       <section id="Project" class="pt-7 sm:px-8 sm:py-24">
         <div class="container mx-auto text-center">
           <h2 class="text-blue-gray-900 mb-4 block font-sans text-4xl font-semibold leading-[1.3] tracking-normal antialiased">
-            Project
+            Projects
           </h2>
           <p class="mb-8 block font-sans text-base font-normal leading-relaxed !text-gray-500 text-inherit antialiased">
             "he power of the Web is in its universality. Access by everyone
             regardless of disability is an essential aspect"
           </p>
         </div>
+        <h4 class="text-blue-gray-900 mb-2 mb-3 block text-center font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
+          E-commerce Application
+        </h4>
         <div class="flex items-center justify-center">
-          <div class="relative  flex w-full flex-col rounded-xl  bg-white bg-clip-border text-gray-700 shadow-md sm:w-3/4 sm:flex-row">
+          <div class="relative flex w-full  flex-col rounded-xl border border-violet-500  bg-white bg-clip-border text-gray-700 shadow-md sm:w-3/4 sm:flex-row">
             <div class="relative m-0  w-full shrink-0  overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700 sm:w-1/2">
               <img
                 src="project.png"
@@ -289,9 +292,7 @@ const Herosection = () => {
               <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
                 Cilory
               </h6>
-              <h4 class="text-blue-gray-900 mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
-                E-commerce Application
-              </h4>
+
               <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                 Our goal is to create an intuitive, user-friendly, and secure
                 platform that simplifies the shopping process, Responsive design
@@ -302,6 +303,113 @@ const Herosection = () => {
               <Link
                 class="inline-block"
                 href="https://deployments-eta.vercel.app/"
+                target="_blank"
+              >
+                <button
+                  class="flex select-none items-center gap-2 rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Live Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-blue-gray-900 mb-2 mt-7 block text-center font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
+          Secure Document Sharing and Upload with User Email OTP Verification
+        </h4>
+        <div class="mt-7 flex items-center justify-center">
+          <div class="relative flex w-full  flex-col rounded-xl border border-violet-500  bg-white bg-clip-border text-gray-700 shadow-md sm:w-3/4 sm:flex-row">
+            <div class="relative m-0  w-full shrink-0  overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700 sm:w-1/2">
+              <img
+                src="projectsecond.png"
+                alt="image"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
+                Document sharing
+              </h6>
+
+              <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                This feature ensures that only verified users can upload
+                documents by implementing an email-based OTP (One-Time Password)
+                verification system. Before uploading, users must enter a valid
+                OTP sent to their registered email, enhancing security and
+                preventing unauthorized access.
+              </p>
+              <Link
+                class="inline-block"
+                href="https://documentupload.vercel.app/"
+                target="_blank"
+              >
+                <button
+                  class="flex select-none items-center gap-2 rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Live Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-blue-gray-900 mb-2 mt-7 block text-center font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
+          Smart Event Management System
+        </h4>
+        <div class="mt-7 flex items-center justify-center">
+          <div class="relative flex w-full  flex-col rounded-xl border border-violet-500  bg-white bg-clip-border text-gray-700 shadow-md sm:w-3/4 sm:flex-row">
+            <div class="relative m-0  w-full shrink-0  overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700 sm:w-1/2">
+              <img
+                src="projectthird.png"
+                alt="image"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h6 class="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
+                Smart Events
+              </h6>
+
+              <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                A centralized platform to create, manage, and track events
+                efficiently. It allows organizers to add event details, manage
+                attendees, and share updates, while users can browse, register,
+                and receive notifications — all in one place.
+              </p>
+              <Link
+                class="inline-block"
+                href="https://events-eight-smoky.vercel.app/"
                 target="_blank"
               >
                 <button
