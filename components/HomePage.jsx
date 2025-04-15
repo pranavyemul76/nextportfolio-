@@ -7,7 +7,7 @@ import ThankYou from "./ThankYou";
 import WhatIDo from "./WhatIDo";
 import CopyRight from "./CopyRight";
 import Herosection from "./Herosection";
-import Ideal from "./ideal";
+import Ideal from "./Ideal";
 import Why from "./Why";
 const HomePage = () => {
   return (
